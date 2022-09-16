@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import {Fade} from "react-reveal";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -44,6 +45,7 @@ export const Contact = () => {
   };
 
   return (
+    <Fade bottom duration={1000} distance="20px">
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
@@ -90,6 +92,6 @@ export const Contact = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </section></Fade>
   )
 }

@@ -6,6 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import {Fade} from "react-reveal";
 
 export const Skills = () => {
   const responsive = {
@@ -29,7 +30,9 @@ export const Skills = () => {
   };
 
   return (
+    
     <section className="skill" id="skills">
+      <Fade bottom duration={1000} distance="20px">
         <div className="container">
             <div className="row">
                 <div className="col-12">
@@ -58,6 +61,7 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
+        </Fade>
         <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
