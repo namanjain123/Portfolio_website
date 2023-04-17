@@ -10,7 +10,7 @@ using ProjectApi.Model;
 
 namespace ProjectApi.Controllers
 {
-    [Authorize]
+    
     [Route("api/[controller]")]
     [ApiController]
     public class JobController : ControllerBase

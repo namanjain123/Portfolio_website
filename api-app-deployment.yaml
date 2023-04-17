@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: api-app
+  template:
+    metadata:
+      labels:
+        app: api-app
+    spec:
+      containers:
+      - name: api-app
+        image: namanjain9460/projectapi
+        ports:
+        - containerPort: 80
