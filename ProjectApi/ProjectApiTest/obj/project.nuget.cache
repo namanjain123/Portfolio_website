@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Aa6O3FSqRG4uXbVjbbjRg7JxEHFTkv31ihGCq4RacxOLj6zidnDTsi2CRxl4GW2G0VtEXMlS1pk/6LXXsQUw7Q==",
+  "dgSpecHash": "SyTs1gXoKZHeHxRa/tCuiT3nAdenIWS9Viih0WDK89zNDi99LAit9e1A7kHOVQhsPA849BH/cV00+yqk+kGtug==",
   "success": true,
   "projectFilePath": "C:\\Users\\NamanJain\\OneDrive - Celebal Technologies Private Limited\\Project\\Portfolio_website-main\\ProjectApi\\ProjectApiTest\\ProjectApiTest.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\NamanJain\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\NamanJain\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.3.2\\microsoft.testplatform.objectmodel.17.3.2.nupkg.sha512",
     "C:\\Users\\NamanJain\\.nuget\\packages\\microsoft.testplatform.testhost\\17.3.2\\microsoft.testplatform.testhost.17.3.2.nupkg.sha512",
+    "C:\\Users\\NamanJain\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\NamanJain\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\NamanJain\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\NamanJain\\.nuget\\packages\\mongodb.bson\\2.19.0\\mongodb.bson.2.19.0.nupkg.sha512",

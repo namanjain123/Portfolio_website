@@ -13,7 +13,7 @@ using System.Runtime.Intrinsics.Arm;
 
 namespace ProjectApi.Controllers
 {
-    [Authorize]
+    
     [Route("api/[controller]")]
     [ApiController]
     public class SkiilsController : ControllerBase

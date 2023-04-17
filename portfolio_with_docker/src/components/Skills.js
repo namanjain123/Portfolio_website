@@ -3,12 +3,27 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import React,{ useState, useEffect }  from 'react';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
-import {Fade} from "react-reveal";
+import Fade from "react-awesome-reveal";
+import Slider from 'react-touch-drag-slider'
+
 
 export const Skills = () => {
+  const [posts, setPosts] = useState([]);
+   useEffect(() => {
+      fetch('https://localhost:7047/api/Skiils')
+         .then((response) => response.json())
+         .then((data) => {
+            console.log(data);
+            setPosts(data);
+         })
+         .catch((err) => {
+            console.log(err.message);
+         });
+   }, []);
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -28,19 +43,17 @@ export const Skills = () => {
       items: 1
     }
   };
-
   return (
-    
     <section className="skill" id="skills">
-      <Fade bottom duration={1000} distance="20px">
+     <Fade bottom duration={1000} distance="20px">
         <div className="container">
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>A FullStack Developer Skilled in Python,C++,C#,React.Js,.Net,Tableau and Many More<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>A FullStack Developer Skilled in Python,C++,C#,React.Js,.Net,Tableau and Many More<br/></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
+                            {/* <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>.Net</h5>
                             </div>
@@ -55,13 +68,22 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Tableau</h5>
-                            </div>
+                            </div> */}
+                            {posts.map((post) => {
+         return (
+            <div className="item" key={post.Id}>
+               <img src={meter1} alt="Image" />
+               <h5>{post.Skill}</h5>
+            </div>
+         );
+      })}
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
         </Fade>
+        <img className="background-image-left" src={colorSharp} alt="Image" />
         <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
-import 'animate.css';
+import "animate.css/animate.min.css";
 import TrackVisibility from 'react-on-screen';
-import {Fade} from "react-reveal";
-
+import {Fade} from "react-awesome-reveal";//"react-awesome-reveal";
+import React  from 'react';
 export const Contact = () => {
   const formInitialDetails = {
     firstName: '',

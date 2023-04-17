@@ -11,7 +11,7 @@ using ProjectApi.Model;
 using System.Linq;
 namespace ProjectApi.Controllers
 {
-    [Authorize]
+    
     [Route("api/[controller]")]
     [ApiController]
     public class ProjectController : ControllerBase
