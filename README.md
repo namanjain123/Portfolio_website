@@ -1,10 +1,7 @@
-# Getting Started with Create React App
+# System Architecture
+<img src="https://github.com/namanjain123/Portfolio_website/blob/main/Screenshot%202023-04-25%20150959.png"/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+In the Reat App , you can run:
 
 ### `npm start`
 
