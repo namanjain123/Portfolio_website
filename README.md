@@ -1,5 +1,5 @@
 # System Architecture
-<img src="https://github.com/namanjain123/Portfolio_website/blob/main/Screenshot%202023-04-25%20150959.png"/>
+![alt text](https://drive.google.com/uc?export=view&id=1mXtN0PDfnVsvs5RfMobLrPI_52Vpxbue)
 
 # System Understanind
 <p>When we look at the architecture we see that this application as a whole uses two application where the main system of frontend is in react and backend as .net web api</p>
